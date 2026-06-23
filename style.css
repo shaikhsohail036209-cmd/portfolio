@@ -1,0 +1,138 @@
+.hero{
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:20px;
+background:linear-gradient(135deg,#020617,#0f172a,#1e3a8a);
+}
+
+.section{
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+padding:20px;
+}
+
+.glass-card{
+width:100%;
+max-width:1000px;
+margin:auto;
+}
+body{
+margin:0;
+font-family:'Segoe UI',sans-serif;
+background:linear-gradient(
+135deg,
+#020617,
+#0f172a,
+#1e3a8a
+);
+color:white;
+overflow-x:hidden;
+}
+.hero-image{
+width:250px;
+height:250px;
+border-radius:50%;
+object-fit:cover;
+display:block;
+margin:0 auto 20px;
+}
+.section{
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:50px 20px;
+}
+
+.glass-card{
+background:rgba(255,255,255,0.08);
+backdrop-filter:blur(15px);
+border-radius:20px;
+padding:40px;
+box-shadow:0 8px 30px rgba(0,0,0,0.3);
+}
+.project-card{
+background:rgba(255,255,255,0.08);
+backdrop-filter:blur(15px);
+padding:25px;
+border-radius:20px;
+transition:0.4s;
+cursor:pointer;
+}
+
+.project-card:hover{
+transform:
+translateY(-15px)
+rotate(1deg)
+scale(1.03);
+
+box-shadow:
+0 15px 35px rgba(0,0,0,0.4);
+}
+.hero-image{
+width:350px !important;
+height:350px !important;
+border-radius:50% !important;
+object-fit:cover !important;
+display:block;
+margin:0 auto 40px;
+border:5px solid #3b82f6;
+box-shadow:0 0 40px #2563eb;
+}
+
+@media(max-width:768px){
+.hero-image{
+width:220px !important;
+height:220px !important;
+}
+}
+.skills-container{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:20px;
+width:100%;
+margin-top:20px;
+margin-bottom:30px;
+}
+
+.skill-box{
+min-width:180px;
+padding:18px 25px;
+text-align:center;
+background:rgba(255,255,255,0.1);
+backdrop-filter:blur(10px);
+border-radius:15px;
+font-weight:600;
+cursor:pointer;
+transition:0.3s;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+.skill-box:hover{
+transform:translateY(-8px);
+background:#2563eb;
+box-shadow:0 10px 25px rgba(0,0,0,0.4);
+}
+
+@media(max-width:768px){
+
+.skill-box{
+min-width:140px;
+padding:15px;
+}
+
+.skills-container{
+gap:12px;
+}
+
+}
+#skills .glass-card{
+width:90%;
+margin:0 auto;
+}
